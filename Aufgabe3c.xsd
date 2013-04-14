@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NewXMLSchema"  elementFormDefault="qualified">
+
+<xs:complexType name="rezeptsammlung">
+  <xs:sequenz>
+		<xs:element name="rezept">
+			<xs:sequence>
+				<xs:element name="zutaten" type="zutat" />
+				<xs:element name="zubereitung" type="zubereitung" />
+			</xs:sequence>		
+			<xs:attribute name="titel" type="xs:string" use="required"/>
+			<xs:attribute name="r_id" type="xs:int" use="required"/>
+			<xs:element name="bild" type="xs:string" />
+		</xs:element>
+	</xs:sequenz>
+	
+		
+	<xs:complexType name="zutat">
+		<xs:element name="menge" type="xs:float"/>
+		<xs:element name="einheit" type="mengeneinheit"/>
+		<xs:element name="zutat" type="xs:string" />
+		<xs:attribute name="portionen" type="xs:int" use="required"/>		
+	</xs:complexType>
+
+	<xs:complexType name="zubereitung">
+		<xs:element name="arbeitszeit" type="xs:time"/>
+		<xs:element name="level" type="xs:string"/>
+		<xs:element name="beschreiung" type="xs:string" />
+	</xs:complexType>
+
+	<xs:simpleType name="mengeneinheit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Gramm"/>
+			<xs:enumeration value="Kilogramm"/>
+			<xs:enumeration value="Teelöffel"/>
+			<xs:enumeration value="Esslöffel"/>
+			<xs:enumeration value="Päckchen"/>
+			<xs:enumeration value="Paket"/>
+			<xs:enumeration value="Packung"/>
+			<xs:enumeration value="Messerspitze"/>
+			<xs:enumeration value="Prise"/>
+			<xs:enumeration value="Stück"/>			
+			<xs:enumeration value="Milliliter"/>
+			<xs:enumeration value="Liter"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:complexType>
+</xs:schema>
