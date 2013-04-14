@@ -1,0 +1,60 @@
+{
+„schlagzeugweltrekord“:
+  {
+	„gruppen“:
+		[
+		„gruppe“:
+			[
+	            {
+	               "@attributes": {
+	                    "id": "1"
+		                } ,
+			„gruppenleiter“: 
+				„vorname“: „Max“,
+				„nachname“: „Mustermann“,
+				„email“: „max@mustermann.de“,
+				„geburtstag“: 12.03.1983
+				„erfahrung“: „Profi“,
+				„schlagzeug“: true,
+				„anmerkung“: „keine Anmerkung“,
+				}
+			„person“:
+				{
+				„vorname“: „Hans“,
+				„nachname“: „Wurst“,
+				„email“: „hans@wurst.de“,
+				„geburtstag“: 23.11.1996,
+				„erfahrung“: „fortgeschritten“,
+				„schlagzeug“:true,
+				„anmerkung“: „keine Anmerkung“,
+				}
+			]
+		"gruppe":
+			[
+				{
+					"@attributes": {
+						"id": "2"
+						},
+			"gruppenleiter2: 
+				"vorname": "Lisa",
+				"nachname": "Bauer",
+				"email": "lisa@bauer.de",
+				"geburtstag": "22.07.1986",
+				"erfahrung": "Profi",
+				"schlagzeug":"true",
+				„anmerkung“: „keine Anmerkung“,
+				}
+			"person":
+				{
+				"vorname: "Thomas",
+				"nachname": "Neunmalklug",
+				"email": "thomas@neunmalklug.de",
+				"geburtstag": "04.12.1995",
+				"erfahrung": "fortgeschritten",
+				"schlagzeug":"true",
+				„anmerkung“: „keine Anmerkung“,
+				}
+			]
+	}
+} 
+
