@@ -1,0 +1,26 @@
+Wohlgeformtheit:
+Eine Datei heißt wohlgeformt, wenn sie alle XML-Regeln einhält:
+•  Elemente mit Inhalt haben einen Beginn- und Endauszeichner 
+    (Bsp. <eintrag>Eintrag 1</eintrag>). 
+    Elemente ohne Inhalte können auch in sich geschlossen sein 
+    (Bsp. <eintrag />)
+•	Beginn- und Endauszeichner berücksichtigen Groß- und Kleinschreibung.
+•	Beginn- und Endauszeichner sind ebenentreupaarig verschachtelt.
+•	Elemente dürfen nicht mehrere Attribute mit demselben Namen haben.
+•	Attributeigenschaften stehen in Anführungszeichen. 
+
+
+Validität
+Der Standard definiert ein XML-Dokument als gültig (oder „valid“), 
+wenn es wohlgeformt ist, den Verweis auf eine Grammatik (Bsp. Do-
+kumenttypdefinition oder XML-Schema) enthält und das durch die 
+Grammatik beschriebene Format einhält.
+
+Namespaces
+XML-Namensräume werden benutzt, um das Vokabular eines XML-Dokumentes
+eindeutig zu identifizieren und um in einem einzelnen Dokument mehrere
+XML-Sprachen zu mischen.
+Namensräume werden durch URIs dargestellt. Die Adresse kann beliebig
+definiert werden  und muss nicht existieren. 
+
+
