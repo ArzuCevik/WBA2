@@ -7,6 +7,7 @@
 package Aufgabe4;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -96,32 +97,12 @@ public class Rezeptsammlung {
  
 
     public List<Rezeptsammlung.Rezept> getRezept() {
-  	if (Rezept == null) {
+		if (Rezept == null) {
 			Rezept = new ArrayList<Rezeptsammlung.Rezept>();
 		}
 		return this.Rezept;
 	}
 
-  /*
-     public Rezeptsammlung.Rezept getRezept() {
-     
-        return this.Rezept;
-    }
-  */
-    
-
-    /*public Rezept getRezept() {
-        if (rezept== null) {
-          rezept = new ArrayList<Rezeptsammlung.Rezept>();
-        }
-        return  this.rezept;
-    }*/
-/*    
-    public static Rezept getRezept(int i) {
-    //    if	(i == Rezeptsammlung.getRezept().getRId());
-		return rezept;
-    }
-*/
     /**
      * Sets the value of the rezept property.
      * 
@@ -130,11 +111,6 @@ public class Rezeptsammlung {
      *     {@link Rezeptsammlung.Rezept }
      *     
      */
-    /*
-    public void setRezept(Rezeptsammlung.Rezept value) {
-        this.Rezept = value;
-    }
-    */
 
 
     /**
@@ -190,26 +166,71 @@ public class Rezeptsammlung {
         "titel",
         "zutaten",
         "zubereitung",
-        "bild"
+        "bild",
+        "kommentare"
     })
     public static class Rezept {
 
-        public class Bild {
-        	
+                @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "autor",
+            "zeit",
+            "text"
+        })
+        public class Kommentare {
+                	
+                    @XmlAttribute(required = true)
+                    protected Date zeit;
+                    @XmlAttribute(required = true)
+                    protected String autor;
+                    @XmlElement(required = true)
+                    protected String text;
+                    
 
-	}
+                    public Date getZeit() {
+                        return zeit;
+                    }
+
+                    public void setZeit(Date value) {
+                        this.zeit = value;
+                    }
+                    
+                    public String getAutor() {
+                    	return autor;
+                    }
+                    
+                    public void setAutor(String value) {
+                    	this.autor = value;
+                    }
+                    
+                    public String getText() {
+                    	return text;
+                    }
+                    
+                    public void setText(String value) {
+                    	this.text = value;
+                    }
+                    
+
+        }
+
+		public class Bild {
+  
+        }
 
 
 		@XmlElement(required = true)
         protected static String titel;
         @XmlElement(required = true)
-        protected Rezeptsammlung.Rezept.Zutaten zutaten;
+        protected List<Rezeptsammlung.Rezept.Zutaten> zutaten;
         @XmlElement(required = true)
         protected Rezeptsammlung.Rezept.Zubereitung zubereitung;
         @XmlElement(required = true)
         protected List<Rezeptsammlung.Rezept.Bild> bild;
         @XmlAttribute(name = "r_id")
         protected Integer rId;
+        @XmlElement(required = false)
+        protected List<Kommentare> kommentare;
 
         /**
          * Gets the value of the titel property.
@@ -243,7 +264,11 @@ public class Rezeptsammlung {
          *     {@link Rezeptsammlung.Rezept.Zutaten }
          *     
          */
-        public Rezeptsammlung.Rezept.Zutaten getZutaten() {
+
+        public List<Rezeptsammlung.Rezept.Zutaten> getZutaten() {
+        	if (zutaten == null) {
+        		zutaten = new ArrayList<Rezeptsammlung.Rezept.Zutaten>();
+        	}
             return zutaten;
         }
 
@@ -256,7 +281,7 @@ public class Rezeptsammlung {
          *     
          */
         public void setZutaten(Rezeptsammlung.Rezept.Zutaten value) {
-            this.zutaten = value;
+            this.zutaten = (List<Zutaten>) value;
         }
 
         /**
@@ -291,11 +316,7 @@ public class Rezeptsammlung {
          *     {@link String }
          *     
          */
-        /*
-        public String getBild() {
-            return bild;
-        }
-        */
+
         public List<Rezeptsammlung.Rezept.Bild> getBild() {
             if (bild == null) {
                 bild = new ArrayList<Rezeptsammlung.Rezept.Bild>();
@@ -314,6 +335,19 @@ public class Rezeptsammlung {
         public void setBild(List<Bild> value) {
             this.bild = value;
         }
+
+        public void setKommentare(List<Rezeptsammlung.Rezept.Kommentare> value) {
+            this.kommentare = value;
+        }
+
+            
+        public List<Rezeptsammlung.Rezept.Kommentare> getKommentare() {
+        	if (kommentare == null) {
+        		kommentare = new ArrayList<Rezeptsammlung.Rezept.Kommentare>();
+        	}
+            return kommentare;
+        }
+
 
         /**
          * Gets the value of the rId property.
@@ -587,14 +621,6 @@ public class Rezeptsammlung {
             }
 
         }
-
-        /*
-        public static Rezept getbyID(int i) {
-			if (i == this.getRId()) return rezept;
-			else System.out.println("Kein Rezept zur angegeben ID gefunden!");
-		}
-		*/
-
 
     }
 
