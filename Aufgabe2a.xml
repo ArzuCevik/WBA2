@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schlagzeugweltrekord>
+  <gruppen>
+		<gruppe id="1">
+			<gruppenleiter>
+				<vorname>Max</vorname>
+				<nachname>Mustermann</nachname>
+				<email>max@mustermann.de</email>
+				<geburtstag>12.03.1983</geburtstag>
+				<erfahrung>Profi</erfahrung>
+				<schlagzeug>vorhanden</schlagzeug>
+				<anmerkung>keine Anmerkung</anmerkung>
+			</gruppenleiter>
+			<person>
+				<vorname>Hans</vorname>
+				<nachname>Wurst</nachname>
+				<email>hans@wurst.de</email>
+				<geburtstag>23.11.1996</geburtstag>
+				<erfahrung>fortgeschritten</erfahrung>
+				<schlagzeug>vorhanden</schlagzeug>
+			</person>
+		</gruppe>
+		<gruppe id="2">
+			<gruppenleiter>
+				<vorname>Lisa</vorname>
+				<nachname>Bauer</nachname>
+				<email>lisa@bauer.de</email>
+				<geburtstag>22.07.1986</geburtstag>
+				<erfahrung>Profi</erfahrung>
+				<schlagzeug>vorhanden</schlagzeug>
+				<anmerkung>keine Anmerkung</anmerkung>
+			</gruppenleiter>
+			<person>
+				<vorname>Thomas</vorname>
+				<nachname>Neunmalklug</nachname>
+				<email>thomas@neunmalklug.de</email>
+				<geburtstag>04.12.1995</geburtstag>
+				<erfahrung>fortgeschritten</erfahrung>
+				<schlagzeug>vorhanden</schlagzeug>
+  			</person>
+		</gruppe>
+	</gruppen>
+</schlagzeugweltrekord>
