@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<rezeptsammlung>
+
+  <rezept r_id="" titel="">
+		
+		<zutaten portionen="">
+			<menge></menge>
+			<einheit></einheit>
+			<zutat></zutat>
+		</zutaten>
+		
+		<zubereitung>
+			<arbeitszeit></arbeitszeit>
+			<level></level>
+			<beschreibung></beschreibung>
+		</zubereitung>
+		
+		<bild></bild>
+	
+	</rezept>
+
+</rezeptsammlung>
