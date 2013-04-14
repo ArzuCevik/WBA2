@@ -1,0 +1,14 @@
+Gemeinsamkeiten der Rezepte auf Chefkoch.de:
+Die Rezepte können Bilder behinhalten.
+Sie sind einer Kategorie zugeordnet.
+Sie listen Zutaten auf.
+Es gibt eine Angabe zu den Portionen.
+Sie haben Zubereitungsbeschreibung. 
+Sie können Angaben zu Brenntwerten beinhalten. 
+Sie haben einen Schwierigkeitsgrad.
+Sie haben Angaben zu Arbeitszeit.
+Sie können Kommentare beinhalten.
+
+Unterschiede fallen mir bei der Betrachtung der Inhalte nicht auf. 
+Es gibt Felder, die offensichtlich nicht ausgefüllt sein müssen 
+(z. B. Bilder, Brennwert, Kommentare).
