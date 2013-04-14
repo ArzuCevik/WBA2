@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<rezeptsammlung>
+
+  <rezept r_id="1" titel="Lenchen's Schokoladenkuchen">
+		
+		<zutaten portionen="16">
+			<menge>200</menge>
+			<einheit>g</einheit>
+			<zutat>Butter</zutat>
+			<menge>200</menge>
+			<einheit>g</einheit>
+			<zutat>Zucker</zutat>
+			<menge>120</menge>
+			<einheit>g</einheit>
+			<zutat>Mehl</zutat>
+		</zutaten>
+		
+		<zubereitung>
+			<arbeitszeit einheit="minuten">60</arbeitszeit>
+			<level>normal</level>
+			<beschreibung>
+			Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben. In eine gut gefettete Form geben. 
+Bei 180°Grad 40 - 50 Minuten backen.
+			</beschreibung>
+		</zubereitung>
+		
+		<bild>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/9544-960x720-lenchen_s_schokoladenkuchen.jpg</bild>
+		
+	
+	</rezept>
+	<rezept r_id="2" name="Lammrippchen">
+		<zutaten portionen="4">
+			<menge>1,2</menge>
+			<einheit>kilogramm</einheit>
+			<zutat>Rippchen vom Lamm</zutat>
+			<menge>4</menge>
+			<einheit>Esslöffel</einheit>
+			<zutat>Senf</zutat>
+			<menge>2</menge>
+			<einheit>Stück</einheit>
+			<zutat>Knoblauchzehen</zutat>
+		</zutaten>
+		
+		<zubereitung>
+			<arbeitszeit>20</arbeitszeit>
+			<level>normal</level>
+			<beschreibung>Die Lammrippchen waschen und abtrocknen. In einem El. Olivenöl von allen Seiten gut anbraten und herausnehmen. 
+Aus dem Senf, den gepressten Knoblauch, den fein gewiegten Kräutern, zerstoßenen Wacholderbeeren, Salz und Pfeffer eine Würzpaste herstellen. Mit dieser Paste die Lammrippchen bestreichen. 
+Dann die Rippchen in eine feuerfeste Form legen und bei 200°C ca. 1 Stunde im Ofen braten. 
+Danach herausnehmen und warm stellen. 
+
+Aus dem Fond eine Soße bereiten. Dazu das Fett abgießen, mit Wasser ablöschen und mit Sahne und Mehl binden. 
+Als Beilage passen grüne Bohnen und Kartoffeln, aber auch Kartoffelsalat.</beschreibung>
+		</zubereitung>
+	
+	</rezept>
+
+</rezeptsammlung>
