@@ -1,0 +1,16 @@
+XML:
+XML ist einen reine Markupsprache. Daten und Code werden voneinander getrennt. Sie 
+ist standardisiert, strukturiert und übersichtlich.
+Die Struktur von XML Dokumenten werden mit einem XML Schema definiert und mit diesem 
+Schema validiert.
+XML Dokumente bieten mehr Möglichkeiten im Ggs. zu JSON, das nur der Serialisierung 
+dient.
+Durch die Verwendung von Namespaces können Elemente und Attribute in XML weltweit ein-
+deutig benannt werden. Ein XML Dokument kann losgelöst von einer Anwendung interpre-
+tiert werden. 
+
+
+JSON:
+JSON Dokumente bestehen aus JavaScript-Syntax und sind gleichzeitig ausführbares JavaScript.
+Hier findet also keine Trennung von Daten und Code statt. JSON Dokumente dienen der
+Serialisierung.
